@@ -1,0 +1,14 @@
+{
+    "name": "umm@cafu_uniry_remotesettings",
+    "references": [
+        "umm@cafu_core@v3"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

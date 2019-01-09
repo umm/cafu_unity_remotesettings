@@ -1,0 +1,17 @@
+{
+    "name": "umm@cafu_unity_remotesettings.Tests.PlayMode",
+    "references": [
+        "umm@cafu_uniry_remotesettings",
+        "umm@cafu_core@v3"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
