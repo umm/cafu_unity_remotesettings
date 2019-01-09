@@ -1,6 +1,6 @@
 {
   "name": "@umm/cafu_unity_remotesettings",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Handle Unity RemoteSettings as CAFU Data Layers",
   "homepage": "https://github.com/umm/cafu_unity_remotesettings",
   "bugs": {
