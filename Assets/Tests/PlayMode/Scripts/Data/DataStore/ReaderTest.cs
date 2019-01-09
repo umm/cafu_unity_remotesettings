@@ -32,7 +32,7 @@ namespace CAFU.UnityRemoteSettings.Data.DataStore
             Assert.True(RemoteSettingController.HasKey("FloatValue"));
             Assert.True(RemoteSettingController.HasKey("LongValue"));
             Assert.True(RemoteSettingController.HasKey("StringValue"));
-            Assert.True(RemoteSettingReader.GetBool("BoolValue"));
+            Assert.AreEqual(true, RemoteSettingReader.GetBool("BoolValue"));
             Assert.AreEqual(1, RemoteSettingReader.GetInt("IntValue", 2));
             Assert.AreEqual(0.1f, RemoteSettingReader.GetFloat("FloatValue", 0.2f));
             Assert.AreEqual(10L, RemoteSettingReader.GetLong("LongValue", 20L));
@@ -48,7 +48,7 @@ namespace CAFU.UnityRemoteSettings.Data.DataStore
             Assert.True(RemoteSettingController.HasKey("FloatValue"));
             Assert.True(RemoteSettingController.HasKey("LongValue"));
             Assert.True(RemoteSettingController.HasKey("StringValue"));
-            Assert.True(RemoteSettingReader.GetBool("BoolValue"));
+            Assert.AreEqual(true, RemoteSettingReader.GetBool("BoolValue"));
             Assert.AreEqual(1, RemoteSettingReader.GetInt("IntValue"));
             Assert.AreEqual(0.1f, RemoteSettingReader.GetFloat("FloatValue"));
             Assert.AreEqual(10L, RemoteSettingReader.GetLong("LongValue"));
@@ -64,7 +64,7 @@ namespace CAFU.UnityRemoteSettings.Data.DataStore
             Assert.False(RemoteSettingController.HasKey("NotExistsFloatValue"));
             Assert.False(RemoteSettingController.HasKey("NotExistsLongValue"));
             Assert.False(RemoteSettingController.HasKey("NotExistsStringValue"));
-            Assert.True(RemoteSettingReader.GetBool("NotExistsBoolValue", true));
+            Assert.AreEqual(true, RemoteSettingReader.GetBool("NotExistsBoolValue", true));
             Assert.AreEqual(1, RemoteSettingReader.GetInt("NotExistsIntValue", 1));
             Assert.AreEqual(0.1f, RemoteSettingReader.GetFloat("NotExistsFloatValue", 0.1f));
             Assert.AreEqual(10L, RemoteSettingReader.GetLong("NotExistsLongValue", 10L));
@@ -80,7 +80,7 @@ namespace CAFU.UnityRemoteSettings.Data.DataStore
             Assert.False(RemoteSettingController.HasKey("NotExistsFloatValue"));
             Assert.False(RemoteSettingController.HasKey("NotExistsLongValue"));
             Assert.False(RemoteSettingController.HasKey("NotExistsStringValue"));
-            Assert.False(RemoteSettingReader.GetBool("NotExistsBoolValue"));
+            Assert.AreEqual(default(bool), RemoteSettingReader.GetBool("NotExistsBoolValue"));
             Assert.AreEqual(default(int), RemoteSettingReader.GetInt("NotExistsIntValue"));
             Assert.AreEqual(default(float), RemoteSettingReader.GetFloat("NotExistsFloatValue"));
             Assert.AreEqual(default(long), RemoteSettingReader.GetLong("NotExistsLongValue"));
