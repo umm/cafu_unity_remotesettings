@@ -1,6 +1,7 @@
 {
     "name": "umm@cafu_uniry_remotesettings",
     "references": [
+        "kidsstar@pretendland_common_projects",
         "umm@cafu_core@v3"
     ],
     "optionalUnityReferences": [],
